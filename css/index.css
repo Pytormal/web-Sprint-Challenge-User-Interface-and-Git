@@ -91,6 +91,108 @@ video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
+.flex-between-row {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.flex-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.flex-between-end {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+.flex-around {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-around-end {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.flex-evenly {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex-row-start {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+.flex-row-end {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+}
+body .top-content-1 {
+  padding: 1rem ;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed black;
+}
+body .top-content-2 {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body .top-content-2 .bottom-border {
+  border-bottom: 1px dashed black;
+  width: 370px;
+  padding: 2rem 0;
+  margin: 0;
+}
+body .top-content-2 h2 {
+  padding: 1rem 0;
+  margin: 0;
+}
+body .top-content-2 p {
+  width: 90%;
+  padding: 0 0 1rem 0;
+  margin: 0 ;
+}
+body ul {
+  width: 12rem;
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 0.8rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+body ul h3 {
+  margin: 0;
+  width: auto;
+}
+body .bottom-2 {
+  padding: 2rem 0;
+}
 article,
 aside,
 details,
@@ -119,7 +221,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 table {
@@ -129,10 +231,41 @@ table {
 * {
   box-sizing: border-box;
 }
+nav {
+  padding: 2rem 0 1rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 800px;
+  margin: 0 auto;
+}
+nav .lambda-black {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+nav .top-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 600px;
+}
+nav .top-nav a {
+  color: black;
+  text-decoration: none;
+}
+header {
+  width: 800px;
+  margin: 0 auto;
+  padding: 2rem 0 2rem 0;
+}
 html,
 body {
   height: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
@@ -141,7 +274,7 @@ h4,
 h5 {
   font-size: 18px;
   margin-bottom: 15px;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 p {
   line-height: 1.4;
@@ -185,6 +318,36 @@ p {
   align-items: center;
   justify-content: center;
 }
+.middle-content .box:nth-child(1) {
+  background-color: teal;
+}
+.middle-content .box:nth-child(2) {
+  background-color: gold;
+}
+.middle-content .box:nth-child(3) {
+  background-color: cadetblue;
+}
+.middle-content .box:nth-child(4) {
+  background-color: coral;
+}
+.middle-content .box:nth-child(5) {
+  background-color: crimson;
+}
+.middle-content .box:nth-child(6) {
+  background-color: forestgreen;
+}
+.middle-content .box:nth-child(7) {
+  background-color: darkorchid;
+}
+.middle-content .box:nth-child(8) {
+  background-color: hotpink;
+}
+.middle-content .box:nth-child(9) {
+  background-color: indigo;
+}
+.middle-content .box:nth-child(10) {
+  background-color: dodgerblue;
+}
 .bottom-content {
   display: flex;
   margin: 0 2% 20px;
@@ -204,11 +367,13 @@ footer nav {
   width: 60%;
   display: flex;
   justify-content: space-between;
+  justify-items: flex-start;
   align-items: center;
   padding: 20px 2%;
   font-size: 14px;
+  margin: 0;
 }
 footer nav a {
-  color: pink;
+  color: white;
   text-decoration: none;
 }
